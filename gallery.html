@@ -4,52 +4,212 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <title>Tailwind</title>
   <link rel="stylesheet" href="about.html">
 	<link rel="stylesheet" href="gallery.html">
 	<link rel="stylesheet" href="contact.html">
   <link rel="stylesheet" href="index.html">
+
+  <link rel="stylesheet" href="img/blue.jpg">
+  <link rel="stylesheet" href="img/orange.jpg">
+  <link rel="stylesheet" href="img/pink.jpg">
+  <link rel="stylesheet" href="img/red.jpg">
+  <link rel="stylesheet" href="img/white.jpg">
+  <link rel="stylesheet" href="img/black.jpg">
+
 </head>
-<body>
-  <header class="border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4">
+<body class="bg-amber-100">
+  <header class="border-b md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-indigo-950 text-rose-100">
     
     <!-- Title -->
-    <div class="flex items-center justify-between mb-4 md:mb-0">
+    <div class="flex items-center justify-between mb-4 md:mb-0 text-xl px-2">
       <h1 class="leading-none text-2xl text-grey-darkest">
-        <a class="no-underline text-grey-darkest hover:text-black" href="index.html">
-          Tailwind
+        <a class="no-underline text-grey-darkest hover:text-amber-100" href="index.html">
+          SoleSpeak
         </a>
-      </h1>
+      </h1> 
   
-      <a class="text-black hover:text-orange md:hidden" href="#">
+      <a class="text-black hover:text-orange md:hidden" >
         <i class="fa fa-2x fa-bars"></i>
       </a>
     </div>
     
     <!-- Nav Bar -->
     <nav>
-      <ul class="list-reset md:flex md:items-center">
-        <li class="md:ml-4">
-          <a class="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="index.html">
+      <ul class="list-reset md:flex md:items-center ">
+        <li class="md:ml-4 text-xl px-2">
+          <a class="block no-underline hover:underline py-2 text-grey-darkest hover:text-amber-100 md:border-none md:p-0" href="index.html">
             Home
           </a>
         </li>
 
-        <li class="md:ml-4">
-          <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="about.html">
+        <li class="md:ml-4 text-xl px-2">
+          <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-amber-100 md:border-none md:p-0" href="about.html">
             About
           </a>
         </li>
 
-        <li class="md:ml-4">
-          <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="gallery.html">
+        <li class="md:ml-4 text-xl px-2">
+          <a class="border-t bg-rose-100 text-indigo-950 block no-underline hover:underline py-2 text-grey-darkest hover:text-indigo-950 hover:bg-amber-100 md:border-none md:p-0" href="gallery.html">
             Gallery
           </a>
         </li>
       </ul>
     </nav>
   </header>
+
+<!--Gallery-->
+  <main>
+    <div class="container my-12 mx-auto px-4 md:px-12">
+      <div class="flex flex-wrap -mx-1 lg:-mx-4">
   
+          <!-- Column -->
+          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+  
+              <!-- Article -->
+              <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+  
+                  <a >
+                      <img alt="Placeholder" class="block h-auto w-full" src="img/blue.jpg">
+                  </a>
+  
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                      <h1 class="text-lg">
+                          <a class="no-underline text-black" >
+                              Blue Shoes
+                          </a>
+                      </h1>   
+                        <button class="p-3 rounded-3xl bg-indigo-950 text-rose-100 checked:bg-blue-500 active:bg-amber-100 active:text-indigo-950">
+                          Follow
+                        </button>
+                  </header>
+              </article>
+          </div>
+  
+          <!-- Column -->
+          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+  
+              <!-- Article -->
+              <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+  
+                  <a >
+                      <img alt="Placeholder" class="block h-auto w-full" src="img/orange.jpg">
+                  </a>
+  
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                      <h1 class="text-lg">
+                          <a class="no-underline text-black" >
+                              Orange Shoes
+                          </a>
+                      </h1>   
+                        <button class="p-3 rounded-3xl bg-indigo-950 text-rose-100 checked:bg-blue-500 active:bg-amber-100 active:text-indigo-950">
+                          Follow
+                        </button>
+
+                  </header>
+              </article>
+          </div>
+  
+          <!-- Column -->
+          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+  
+              <!-- Article -->
+              <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+  
+                  <a >
+                      <img alt="Placeholder" class="block h-auto w-full" src="img/pink.jpg">
+                  </a>
+  
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                      <h1 class="text-lg">
+                          <a class="no-underline text-black" >
+                              Pink Shoes
+                          </a>
+                      </h1>   
+                        <button class="p-3 rounded-3xl bg-indigo-950 text-rose-100 checked:bg-blue-500 active:bg-amber-100 active:text-indigo-950">
+                          Follow
+                        </button>
+
+                  </header>
+              </article>
+          </div>
+  
+          <!-- Column -->
+          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+  
+              <!-- Article -->
+              <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+  
+                  <a >
+                      <img alt="Placeholder" class="block h-auto w-full" src="img/red.jpg">
+                  </a>
+  
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                      <h1 class="text-lg">
+                          <a class="no-underline text-black" >
+                              Red Shoes
+                          </a>
+                      </h1>   
+                      
+                        <button class="p-3 rounded-3xl bg-indigo-950 text-rose-100 checked:bg-blue-500 active:bg-amber-100 active:text-indigo-950">
+                          Follow
+                        </button>
+
+                  </header>
+              </article>
+          </div>
+  
+          <!-- Column -->
+          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+  
+              <!-- Article -->
+              <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+  
+                  <a >
+                      <img alt="Placeholder" class="block h-auto w-full" src="img/white.jpg">
+                  </a>
+  
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                      <h1 class="text-lg">
+                          <a class="no-underline text-black" >
+                              White Shoes
+                          </a>
+                      </h1>   
+                      
+                        <button class="p-3 rounded-3xl bg-indigo-950 text-rose-100 checked:bg-blue-500 active:bg-amber-100 active:text-indigo-950">
+                          Follow
+                        </button>
+
+                  </header>
+              </article>
+          </div>
+  
+          <!-- Column -->
+          <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+  
+              <!-- Article -->
+              <article class="overflow-hidden rounded-lg shadow-lg bg-white">
+  
+                  <a >
+                      <img alt="Placeholder" class="block h-auto w-full" src="img/black.jpg">
+                  </a>
+  
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                      <h1 class="text-lg">
+                          <a class="no-underline text-black" >
+                              Black Shoes
+                          </a>
+                      </h1> 
+
+                        <button class="p-3 rounded-3xl bg-indigo-950 text-rose-100 checked:bg-blue-500 active:bg-amber-100 active:text-indigo-950">
+                          Follow
+                        </button>
+                  </header>
+              </article>
+          </div>
+      </div>
+  </div>
+  </main>
   
 </body>
 </html>
